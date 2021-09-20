@@ -5,10 +5,25 @@ const LibrarySong = ({
   id,
   audioRef,
   isPlaying,
+  setsongs,
 }) => {
   const songSelectHandler = () => {
     setCurrentSong(song);
     // Add Active Set
+    const newSongs = songs.map((song) => {
+      if (song.id === id) {
+        return {
+          ...song,
+          active: true,
+        };
+      } else {
+        return {
+          ...song,
+          active: false,
+        };
+      }
+    });
+    setsongs(newSongs);
     // Check if the song is playing
     if (isPlaying) {
       const playPromise = audioRef.current.play();
