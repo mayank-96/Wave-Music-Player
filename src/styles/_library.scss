@@ -25,7 +25,7 @@
     width: 30%;
   }
   &:hover {
-    background: rgb(222, 222, 255);
+    background-color: rgb(222, 222, 255);
   }
 }
 
@@ -57,9 +57,8 @@
 }
 
 .selected {
-  background: rgb(179, 193, 231);
+  background-color: rgb(231, 231, 255);
 }
-
 .active-library {
   transform: translateX(0%);
   opacity: 1;
