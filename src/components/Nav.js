@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
-import Logo from "../Logo.png";
+// import Logo from "../Logo.png";
 
 const Nav = ({ libraryStatus, setLibraryStatus }) => {
   return (
